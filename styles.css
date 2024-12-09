@@ -1,0 +1,308 @@
+body {
+    font-family: 'Lucida Sans';
+    margin: 0;
+    padding: 0;
+    color: #333333;
+    background-image: url(slike/pozadina.png);
+}
+header {
+    background-color: pink;
+    color: #cd5252;
+    text-align: center;
+    padding: 20px;
+}
+
+header img{
+    padding: 10px;
+    max-width: 600px ;
+}
+
+h1{
+    font-size: 40px
+}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav ul li {
+    display: inline;
+    font-size: 25px;
+    margin: 0 15px;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.pocetna-image{
+    text-align: center;
+}
+
+.pocetna-image img{
+
+    max-width: 520px;
+    border-radius: 10px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+  
+.nav ul li a:hover {
+    text-decoration: underline;
+    color: #d87093;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    bottom: 0px;
+    width: 100%;
+}
+
+
+.kontakt-button-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.kontakt-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d6ad60;
+    color: #fff;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.kontakt-button:hover {
+    background-color: #c29450;
+}
+
+
+.kategorija-image {
+    display: block; 
+    margin: 0 auto;
+    height: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.kategorija {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #d6ad60;
+    border-radius: 5px;
+    background-color: #fefefe;
+}
+
+.kategorija h3 {
+    font-size: 1.5em;
+    color: #d6ad60;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.service {
+    border: 1px solid #d6ad60;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-size: 20px;
+    text-align: center;
+}
+
+.service:hover {
+    background-color: #d87093;
+    color: #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea, form button {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: pink;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: palevioletred;
+}
+
+#kontakt-naslov{
+    color: palevioletred;
+    text-align: center;
+}
+
+.about{
+    background-color: #f8d7da; 
+    padding: 30px; border-radius: 10px;
+    box-shadow: 0 4px 8px rgbalo, 0, 0, 0.1;
+    margin: 20px auto; 
+    max-width: 1000px;
+    text-align: center;  
+    font-weight: bold;
+}
+
+.about h2{
+    font-size: 30px;
+}
+
+.about p{
+    font-size: 17px;
+    line-height: 1.5;
+
+}
+
+.kontakt-image {
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.kontakt-image img {
+    width: auto; 
+    height: 100%; 
+    position: relative; 
+}
+
+.service{
+    background-color: #f8d7da; 
+    padding: 30px; border-radius: 10px;
+    box-shadow: 0 4px 8px rgbalo, 0, 0, 0.1;
+    margin: 20px auto; 
+    max-width: 1000px;
+    text-align: center;  
+    font-weight: bold;
+}
+
+.service h2{
+    font-size: 30px;
+}
+
+.service p{
+    font-size: 17px;
+    line-height: 1.2;
+}
+
+.service p{
+    text-align: left;
+}
+.service li{
+    text-align: left;
+}
+
+
+@media (max-width: 768px) {
+    .category-image, header img, .pocetna-image img,  .kategorija-image{
+        max-height: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    header, .nav ul {
+        text-align: center;
+    }
+
+    .nav ul {
+        padding: 0;
+    }
+
+    .nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .service-card {
+        margin-bottom: 15px;
+    }
+}
+
+
+@keyframes fadeIn {
+    from {
+        transform: translateY(-10%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+
+#fade-in {
+    animation: fadeIn 1s ease-in forwards;
+}
+
+#slide-in-left {
+    animation: slideInLeft 1s ease-out forwards;
+}
+
+#slide-in-right {
+    animation: slideInRight 1s ease-in forwards;
+}
